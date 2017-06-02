@@ -1,0 +1,30 @@
+ /* The animation code */
+@keyframes example {
+    0%   {content: '10';font-size: 6em;}
+    10%  {content: '9';font-size: 6em;}
+    20%  {content: '8';font-size: 6em;}
+    30%  {content: '7';font-size: 6em;}
+    40% {content: '6';font-size: 6em;}
+    50%   {content: '5';font-size: 6em;}
+    60%  {content: '4';font-size: 6em;}
+    70%  {content: '3';font-size: 6em;}
+    80%  {content: '2';font-size: 6em;}
+    90% {content: '1';font-size: 6em;}
+    100% {content: '0';font-size: 6em;}
+    }
+/* The element to apply the animation to */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    position: relative;
+} 
+
+span::after{
+content: 'I love CSS:)';
+color: #fff;
+animation-name: example;
+animation-duration: 4s;
+text-align: center;
+line-height: 100px;
+}
